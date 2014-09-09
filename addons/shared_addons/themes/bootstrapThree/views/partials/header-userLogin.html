@@ -1,0 +1,36 @@
+<li>
+    {{ if user:logged_in }}
+    {{ if settings:enable_profiles }}
+    <a href="{{ url:site uri='my-profile' }}">{{ helper:gravatar email=user:email size="16" }} {{ user:display_name }}</a>
+    {{ else }}
+    {{ helper:gravatar email=user:email size="20" }} {{ user:display_name }}
+    {{ endif }}
+    {{ if settings:enable_profiles }}
+    <a href="{{ url:site uri='edit-profile' }}">Editar Perfil</a>
+    {{ endif }}
+    {{ if user:has_cp_permissions }}
+    <a href="{{ url:site uri='admin' }}" target="_blank">Panel de Control</a>
+    {{ endif }}
+    <a href="{{ url:site uri='users/logout' }}">Salir</a>
+    {{ else }}
+
+    <form action="{{ url:site uri='users/login' }}" method="post" accept-charset="utf-8" id="login-small" class="search">
+    
+        <input type="hidden" name="redirect_to" value="{{ url:current }}" />
+        <input type="text" id="email" name="email" maxlength="120" placeholder="{{ helper:lang line="global:email" }}" />
+        <input type="password" id="password" name="password" maxlength="20" placeholder="{{ helper:lang line="global:password" }}" />
+
+        <div class="ckBox">
+            <label class="string optional" for="remember-check">
+                <input type="checkbox" id="remember-check" name="remember" value="1" />Recordarme
+            </label>
+        </div>
+        <input type="submit" class="btn btn-primary" style="clear: both; margin-top: 10px" value="Entrar" name="btnLogin" />
+
+        <p style="clear:both; margin:10px; font-size: small; color:#aaa; text-align:center;"><?php echo anchor('users/reset_pass', '¿Olvidaste tu Clave?');?>
+
+        </form>
+
+        {{ endif }}
+    </li>
+

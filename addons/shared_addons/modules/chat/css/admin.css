@@ -1,0 +1,88 @@
+.chat-layout{
+	width: 800px;
+}
+.chat-layout .chat-list-content{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #ddd;
+	border:1px solid #ccc;
+	box-sizing: border-box;
+	display: inline-block;
+	min-height: 400px;
+	padding: 10px;
+	vertical-align: top;
+	width: 35%;
+}
+.chat-layout .chat-list-content .title-left{
+	font-size: 14px;
+	text-align: center;
+}
+.chat-layout .chat-list-content .client{
+	background-color: #eee;
+	cursor: pointer;
+	margin: 10px 0px;
+	padding: 2px 4px;
+}
+.chat-layout .chat-list-content .client:hover{
+	background-color: #aaa;
+	color: #fff;
+}
+.chat-layout .chat-messages-content{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	display: inline-block;
+	min-height: 400px;
+	padding: 10px;
+	vertical-align: top;
+	width: 64%;
+}
+.item-active{
+	background-color: #333 !important;
+	color: #fff;
+}
+.admin-window{
+	border: 1px solid #333;
+	display: none;
+}
+.admin-window .title{
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	text-shadow: none;
+}
+.admin-window .content-comments{
+	background-color: #eee;
+	height: 300px;
+	overflow: auto;
+	padding: 0px 10px;
+}
+.admin-window .content-comments .comment{
+	display: block;
+	margin: 10px 0px;
+	padding: 2px 0px;
+	font-weight: 600;
+}
+.admin-window .content-comments .comment-1{
+	margin-left: 30px;
+	text-align: right;
+}
+.admin-window .content-comments .comment-2{
+	margin-right: 30px;
+	text-align: left;
+}
+.admin-window .content-comments .comment-1 .content{
+	color: #1305D5;
+}
+.admin-window .content-comments .comment-2 .content{
+	color: #258e1c;
+}
+.admin-window .inputs-chat{
+	border-top: 1px solid #333;
+	padding: 0px 10px;
+}
+.admin-window .inputs-chat .input-comment{
+	width: 300px;
+}

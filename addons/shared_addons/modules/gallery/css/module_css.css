@@ -1,0 +1,6 @@
+/*dropzone*/
+.dzRenombrar,.dzRotar,.dzEliminar{display:inline-block}
+.dzRenombrar,.dzRotar{width:33px}
+.dzEliminar{width:34px}
+.dzEliminar i{margin-left:10px}
+.dzRotar i{margin-left:19px;}

@@ -1,0 +1,32 @@
+<footer class="mtop60">
+	<!-- widget chat -->
+	{{ widgets:instance id="4"}}
+	<div class="container">
+		<div class="row">
+            <div class="col-sx-6 col-sm-8 col-md-8 col-lg-8">
+                {{ widgets:instance id="3"}}
+            </div>
+            <div class="col-sx-6 col-sm-4 col-md-4 col-lg-4">
+                <h3>Mapa de <b>Sitio</b></h3>
+                <ul class="foot-nav">
+                    {{ navigation:links group="footer" }}
+                </ul>
+            </div>
+		</div>
+	</div>
+    <div class="trans">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sx-12 col-lg-8 col-sm-8 col-md-8">
+                    <p class="copyright">&#169; {{ helper:date format="Y" }} - <span>{{ settings:site_name }}</span> - {{ helper:lang line="all_right_reserved" }}</p>
+                </div>
+                <div class=" col-sx-12 col-lg-4 col-sm-4 col-md-4">
+                    <div class="marca-cont">
+                        <a style="color:white !important;font-size: 14px;" href="http://proyecto5.fastproject.co/" target="_blank">Desarrollo de software <div class="ahorranito"></div> imagin<span class="a-logo">a</span>mos.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+

@@ -1,0 +1,44 @@
+.client-window{
+	background-color: #eee;
+	border: 1px solid #333;
+}
+.client-window .title{
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	text-shadow: none;
+}
+.client-window .content-comments{
+	background-color: #eee;
+	height: 300px;
+	overflow: auto;
+	padding: 0px 10px;
+}
+.client-window .content-comments .comment{
+	display: block;
+	font-weight: 600;
+	margin: 10px 0px;
+	padding: 2px 0px;
+}
+.client-window .content-comments .comment-user{
+	margin-left: 30px;
+	text-align: right;
+}
+.client-window .content-comments .comment-admin{
+	margin-right: 30px;
+	text-align: left;
+}
+.client-window .content-comments .comment-user .content{
+	color: #1305D5;
+}
+.client-window .content-comments .comment-admin .content{
+	color: #258e1c;
+}
+
+.client-window .inputs-chat{
+	border-top: 1px solid #333;
+	padding: 5px 10px;
+}
+.client-window .inputs-chat #input-comment{
+	width: 300px;
+}
