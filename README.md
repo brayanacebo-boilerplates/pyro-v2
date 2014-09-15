@@ -1,4 +1,4 @@
-# Boilerplates
+# Boilerplate Pyro V2
 
 * [Sitio Web](http://brayanacebo.com/hidden)
 * [Documentación General del CMS](https://www.pyrocms.com/documentation)
@@ -21,7 +21,16 @@ Si usted desea colaborar por favor comuníquese con el equipo internamente.
 
 Si usted esta viendo esto es por que tiene un minino de permisos de lectura; siendo así puede clonar o descargar el proyecto e iniciar su propia instalación. Dentro encontrara el .sql con la base de datos en un directorio llamado docs y su configuración la puede hacer en system/cms/config/database.php
 
-Instale por favor la base de datos llamada nucle_base.sql, entre a las misma y busque la tabla default_users y edite el primer registro (brayanacebo@gmail.com) con su correo. La clave por defecto es Colombia; Asi usted tendrá los accesos de desarrollador.
+Instale por favor la base de datos llamada pyro-v2.sql, entre a las misma y busque la tabla default_users y edite el primer registro (brayanacebo@gmail.com) con su correo. La clave por defecto es "Colombia"; Asi usted tendrá los accesos de desarrollador.
+
+Es probable que necesite darle permisos a los siguientes directorios-
+
+- addons/*
+- assets/*
+- uploads/*
+- system/cms/cache/*
+- system/cms/config/*
+
 
 ### Importante en la instalación
 
