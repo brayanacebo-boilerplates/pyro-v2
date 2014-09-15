@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 4.0.9
 -- http://www.phpmyadmin.net
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 09-09-2014 a las 17:41:25
--- Versión del servidor: 5.6.16
--- Versión de PHP: 5.5.11
+-- Servidor: localhost
+-- Tiempo de generación: 15-09-2014 a las 16:46:21
+-- Versión del servidor: 5.6.14
+-- Versión de PHP: 5.5.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `nucleo_base`
+-- Base de datos: `pyro-v2`
 --
 
 -- --------------------------------------------------------
@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `core_users` (
 --
 
 INSERT INTO `core_users` (`id`, `email`, `password`, `salt`, `group_id`, `ip_address`, `active`, `activation_code`, `created_on`, `last_login`, `username`, `forgotten_password_code`, `remember_code`) VALUES
-(1, 'brayan.acebo@imaginamos.co', '338bccf91d210f7f31577bfdd9e26937e4fbc469', '02dcb', 1, '', 1, '', 1394062758, 1394802644, 'brayanacebo', NULL, 'd95f7f92800589c4acec3978799d78589181fbfa');
+(1, 'brayanacebo@gmail.com', '338bccf91d210f7f31577bfdd9e26937e4fbc469', '02dcb', 1, '', 1, '', 1394062758, 1394802644, 'brayanacebo', NULL, 'd95f7f92800589c4acec3978799d78589181fbfa');
 
 -- --------------------------------------------------------
 
@@ -276,7 +276,11 @@ INSERT INTO `default_ci_sessions` (`session_id`, `ip_address`, `user_agent`, `la
 ('a84dd5960621e6e5dab1ee16a69f956d', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36', 1410172443, ''),
 ('1ed90a47de61c4b024a69c0642c8bed3', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36', 1410266145, ''),
 ('e16649919d8d4a107dbb288ea25d2e22', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36', 1410266151, 'a:1:{s:14:"admin_redirect";s:5:"admin";}'),
-('92eb1ddd456584272899685209e932ab', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36', 1410266151, 'a:6:{s:8:"username";s:12:"luis.salazar";s:5:"email";s:23:"luis.salazar@imagina.co";s:2:"id";s:1:"2";s:7:"user_id";s:1:"2";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}');
+('92eb1ddd456584272899685209e932ab', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36', 1410266151, 'a:6:{s:8:"username";s:12:"luis.salazar";s:5:"email";s:23:"luis.salazar@imagina.co";s:2:"id";s:1:"2";s:7:"user_id";s:1:"2";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}'),
+('269a49fff8063fa63c501c6b43c7e8a3', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36', 1410281847, 'a:6:{s:8:"username";s:11:"brayanacebo";s:5:"email";s:21:"brayanacebo@gmail.com";s:2:"id";s:1:"1";s:7:"user_id";s:1:"1";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}'),
+('3cc026729a6fddb809534e4a078ed0ec', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36', 1410350362, 'a:5:{s:5:"email";s:21:"brayanacebo@gmail.com";s:2:"id";s:1:"1";s:7:"user_id";s:1:"1";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}'),
+('19afd50bda7a6d298b3d87a23821b356', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36', 1410359670, ''),
+('9c9a074bbcad078c7098fc41be586260', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36', 1410785138, 'a:6:{s:8:"username";s:11:"brayanacebo";s:5:"email";s:21:"brayanacebo@gmail.com";s:2:"id";s:1:"1";s:7:"user_id";s:1:"1";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}');
 
 -- --------------------------------------------------------
 
@@ -1361,7 +1365,7 @@ CREATE TABLE IF NOT EXISTS `default_profiles` (
 --
 
 INSERT INTO `default_profiles` (`id`, `created`, `updated`, `created_by`, `ordering_count`, `user_id`, `display_name`, `first_name`, `last_name`, `company`, `lang`, `bio`, `dob`, `gender`, `phone`, `mobile`, `address_line1`, `address_line2`, `address_line3`, `postcode`, `website`, `updated_on`) VALUES
-(1, NULL, NULL, NULL, NULL, 1, 'brayan acebo', 'brayan', 'acebo', '', 'en', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1, NULL, NULL, NULL, NULL, 1, 'brayan acebo', 'brayan', 'acebo', NULL, 'es', '', 0, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1410270448),
 (2, '2014-07-12 17:01:24', NULL, 1, 1, 2, 'Luis Fernando', 'Luis Fernando', 'Salazar Buitrago', 'Imaginamos S.A.S', 'en', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -1619,7 +1623,7 @@ CREATE TABLE IF NOT EXISTS `default_theme_options` (
   `is_required` int(1) NOT NULL,
   `theme` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=27 ;
 
 --
 -- Volcado de datos para la tabla `default_theme_options`
@@ -1637,7 +1641,11 @@ INSERT INTO `default_theme_options` (`id`, `slug`, `title`, `description`, `type
 (9, 'color', 'Default Theme Color', 'This changes things like background color, link colors etc…', 'select', 'pink', 'pink', 'red=Red|orange=Orange|yellow=Yellow|green=Green|blue=Blue|pink=Pink', 1, 'base'),
 (10, 'show_breadcrumbs', 'Do you want to show breadcrumbs?', 'If selected it shows a string of breadcrumbs at the top of the page.', 'radio', 'yes', 'yes', 'yes=Yes|no=No', 1, 'base'),
 (21, 'show_breadcrumbs', 'Do you want to show breadcrumbs?', 'If selected it shows a string of breadcrumbs at the top of the page.', 'radio', 'no', 'no', 'yes=Yes|no=No', 1, 'bootstrapThree'),
-(22, 'bootSwatch_layout', 'Theme', 'Choose the default bootstrap.css or select the bootswatch theme that you prefer', 'select', 'bootstrap', 'bootstrap', 'bootstrap=Default - Bootstrap|amelia=Amelia|cerulean=Cerulean|cosmo=Cosmo|cyborg=Cyborg|flatly=Flatly|journal=Journal|readable=Readable|simplex=Simplex|slate=Slate|spacelab=Spacelab|united=United|yeti=Yeti', 1, 'bootstrapThree');
+(22, 'bootSwatch_layout', 'Theme', 'Choose the default bootstrap.css or select the bootswatch theme that you prefer', 'select', 'bootstrap', 'bootstrap', 'bootstrap=Default - Bootstrap|amelia=Amelia|cerulean=Cerulean|cosmo=Cosmo|cyborg=Cyborg|flatly=Flatly|journal=Journal|readable=Readable|simplex=Simplex|slate=Slate|spacelab=Spacelab|united=United|yeti=Yeti', 1, 'bootstrapThree'),
+(23, 'pyrocms_recent_comments', 'Recent Comments', 'Would you like to display recent comments on the dashboard?', 'radio', 'yes', 'yes', 'yes=Yes|no=No', 1, 'pyrocms2'),
+(24, 'pyrocms_news_feed', 'News Feed', 'Would you like to display the news feed on the dashboard?', 'radio', 'yes', 'yes', 'yes=Yes|no=No', 1, 'pyrocms2'),
+(25, 'pyrocms_quick_links', 'Quick Links', 'Would you like to display quick links on the dashboard?', 'radio', 'yes', 'yes', 'yes=Yes|no=No', 1, 'pyrocms2'),
+(26, 'pyrocms_analytics_graph', 'Analytics Graph', 'Would you like to display the graph on the dashboard?', 'radio', 'yes', 'yes', 'yes=Yes|no=No', 1, 'pyrocms2');
 
 -- --------------------------------------------------------
 
@@ -1661,15 +1669,14 @@ CREATE TABLE IF NOT EXISTS `default_users` (
   `remember_code` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `email` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Registered User Information' AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Registered User Information' AUTO_INCREMENT=2 ;
 
 --
 -- Volcado de datos para la tabla `default_users`
 --
 
 INSERT INTO `default_users` (`id`, `email`, `password`, `salt`, `group_id`, `ip_address`, `active`, `activation_code`, `created_on`, `last_login`, `username`, `forgotten_password_code`, `remember_code`) VALUES
-(1, 'brayan.acebo@imaginamos.co', '338bccf91d210f7f31577bfdd9e26937e4fbc469', '02dcb', 1, '', 1, '', 1394062758, 1405597377, 'brayanacebo', NULL, 'd95f7f92800589c4acec3978799d78589181fbfa'),
-(2, 'luis.salazar@imagina.co', '59cd9599b4523c87f6d3f723454784c0aa96e266', 'f12a55', 1, '127.0.0.1', 1, NULL, 1405184484, 1410266183, 'luis.salazar', NULL, '728fe8b07b15736caf3752d3762c325c9548d282');
+(1, 'brayanacebo@gmail.com', '315da6f6681956ff075828067443f86d69216da3', '02dcb', 1, '', 1, '', 1394062758, 1410785162, 'brayanacebo', NULL, '4f905ccd67b10e497807ddffe05dfd397e64770e');
 
 -- --------------------------------------------------------
 
