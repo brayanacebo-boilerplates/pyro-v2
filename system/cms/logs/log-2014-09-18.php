@@ -2423,3 +2423,81 @@ ERROR - 2014-09-18 17:18:10 --> Plugin method "img" does not exist on class "Plu
 ERROR - 2014-09-18 17:18:10 --> Page Missing: addons/shared_addons/themes/kubo/css/assets/prev.png
 ERROR - 2014-09-18 17:18:10 --> Plugin method "img" does not exist on class "Plugin_Theme".
 ERROR - 2014-09-18 17:35:29 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:03:55 --> Severity: Notice  --> Use of undefined constant FS_VERSION - assumed 'FS_VERSION' /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/system/cms/themes/pyrocms/views/admin/layouts/default.php 96
+ERROR - 2014-09-18 18:03:55 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/system/cms/themes/pyrocms/views/admin/layouts/default.php 120
+ERROR - 2014-09-18 18:04:15 --> Severity: Notice  --> Use of undefined constant FS_VERSION - assumed 'FS_VERSION' /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/system/cms/themes/pyrocms/views/admin/layouts/default.php 96
+ERROR - 2014-09-18 18:05:41 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:05:50 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:07:24 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:08:04 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:08:08 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:08:50 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:09:08 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:09:56 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:12:42 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:12:44 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:13:00 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:14:32 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:14:49 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:14:56 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:16:19 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:16:21 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:16:24 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:16:27 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:17:08 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:17:19 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:17:51 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:18:48 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:19:20 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:19:24 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:21:53 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:21:55 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:22:19 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:22:26 --> Severity: Warning  --> file_get_contents(http://www.youtube.com/oembed?url=&amp;lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/-aL5xgPHm_Q&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&gt;&amp;format=json): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 38
+ERROR - 2014-09-18 18:22:26 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 39
+ERROR - 2014-09-18 18:22:26 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 40
+ERROR - 2014-09-18 18:22:26 --> Severity: Notice  --> Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 41
+ERROR - 2014-09-18 18:22:26 --> Severity: Warning  --> file_get_contents(http://www.youtube.com/oembed?url=&amp;lt;iframe width=&quot;260&quot; height=&quot;202&quot; src=&quot;//www.youtube.com/embed/D9GwupBkUDY&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&gt;&amp;format=json): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 38
+ERROR - 2014-09-18 18:22:26 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 39
+ERROR - 2014-09-18 18:22:26 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 40
+ERROR - 2014-09-18 18:22:26 --> Severity: Notice  --> Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 41
+ERROR - 2014-09-18 18:22:26 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:22:27 --> Page Missing: images/thumbs/1.jpg
+ERROR - 2014-09-18 18:22:27 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:22:27 --> Page Missing: addons/shared_addons/themes/kubo/css/images/gradient/g30.png
+ERROR - 2014-09-18 18:22:27 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:22:56 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:22:59 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:24:02 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:24:06 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:26:12 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:26:31 --> Severity: Notice  --> Use of undefined constant FS_VERSION - assumed 'FS_VERSION' /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/system/cms/themes/pyrocms/views/admin/layouts/default.php 96
+ERROR - 2014-09-18 18:27:12 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:32:11 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:32:25 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:32:48 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:33:57 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:01 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:03 --> Severity: Warning  --> file_get_contents(http://www.youtube.com/oembed?url=&amp;lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/-aL5xgPHm_Q&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&gt;&amp;format=json): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 38
+ERROR - 2014-09-18 18:39:03 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 39
+ERROR - 2014-09-18 18:39:03 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 40
+ERROR - 2014-09-18 18:39:03 --> Severity: Notice  --> Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 41
+ERROR - 2014-09-18 18:39:03 --> Severity: Warning  --> file_get_contents(http://www.youtube.com/oembed?url=&amp;lt;iframe width=&quot;260&quot; height=&quot;202&quot; src=&quot;//www.youtube.com/embed/D9GwupBkUDY&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&gt;&amp;format=json): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 38
+ERROR - 2014-09-18 18:39:03 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 39
+ERROR - 2014-09-18 18:39:03 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 40
+ERROR - 2014-09-18 18:39:03 --> Severity: Notice  --> Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/boilerplates/pyro-v2/addons/shared_addons/modules/gallery/controllers/gallery.php 41
+ERROR - 2014-09-18 18:39:03 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:03 --> Page Missing: images/thumbs/1.jpg
+ERROR - 2014-09-18 18:39:03 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:04 --> Page Missing: addons/shared_addons/themes/kubo/css/images/gradient/g30.png
+ERROR - 2014-09-18 18:39:04 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:07 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:09 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:50 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:54 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:39:59 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-18 18:40:17 --> Plugin method "img" does not exist on class "Plugin_Theme".
