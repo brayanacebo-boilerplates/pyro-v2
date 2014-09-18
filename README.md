@@ -25,11 +25,12 @@ Instale por favor la base de datos llamada pyro-v2.sql, entre a las misma y busq
 
 Es probable que necesite darle permisos a los siguientes directorios-
 
-- addons/*
-- assets/*
-- uploads/*
-- system/cms/cache/*
-- system/cms/config/*
+- system/cms/cache
+- system/cms/config
+- addons
+- assets/cache
+- uploads 
+- system/cms/config/config.php
 
 
 ### Importante en la instalación
