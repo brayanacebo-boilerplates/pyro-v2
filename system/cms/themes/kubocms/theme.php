@@ -2,42 +2,42 @@
 
 class Theme_Kubocms extends Theme {
 
-    public $name			= 'KuboCMS';
-    public $author			= 'Javier Varon';
-    public $author_website	= 'http://javiervaron.co/';
-    public $website			= 'http://javiervaron.co/';
-    public $description		= 'KuboCMS admin theme. HTML5 and CSS3 styling.';
-    public $version			= '1.0.0';
+	public $name			= 'KuboCMS';
+	public $author			= 'Javier Varon && Brayan Acebo';
+	public $author_website	= 'http://javiervaron.co/';
+	public $website			= 'http://javiervaron.co/';
+	public $description		= 'KuboCMS admin theme. HTML5 and CSS3 styling.';
+	public $version			= '1.0.0';
 	public $type			= 'admin';
 	public $options 		= array('pyrocms_recent_comments' => array('title' 		=> 'Recent Comments',
-																'description'   => 'Would you like to display recent comments on the dashboard?',
-																'default'       => 'yes',
-																'type'          => 'radio',
-																'options'       => 'yes=Yes|no=No',
-																'is_required'   => true),
-																
-									'pyrocms_news_feed' => 			array('title' => 'News Feed',
-																'description'   => 'Would you like to display the news feed on the dashboard?',
-																'default'       => 'yes',
-																'type'          => 'radio',
-																'options'       => 'yes=Yes|no=No',
-																'is_required'   => true),
-																
-									'pyrocms_quick_links' => 		array('title' => 'Quick Links',
-																'description'   => 'Would you like to display quick links on the dashboard?',
-																'default'       => 'yes',
-																'type'          => 'radio',
-																'options'       => 'yes=Yes|no=No',
-																'is_required'   => true),
-																
-									'pyrocms_analytics_graph' => 	array('title' => 'Analytics Graph',
-																'description'   => 'Would you like to display the graph on the dashboard?',
-																'default'       => 'yes',
-																'type'          => 'radio',
-																'options'       => 'yes=Yes|no=No',
-																'is_required'   => true),
-								   );
-	
+		'description'   => 'Would you like to display recent comments on the dashboard?',
+		'default'       => 'yes',
+		'type'          => 'radio',
+		'options'       => 'yes=Yes|no=No',
+		'is_required'   => true),
+
+	'pyrocms_news_feed' => 			array('title' => 'News Feed',
+		'description'   => 'Would you like to display the news feed on the dashboard?',
+		'default'       => 'yes',
+		'type'          => 'radio',
+		'options'       => 'yes=Yes|no=No',
+		'is_required'   => true),
+
+	'pyrocms_quick_links' => 		array('title' => 'Quick Links',
+		'description'   => 'Would you like to display quick links on the dashboard?',
+		'default'       => 'yes',
+		'type'          => 'radio',
+		'options'       => 'yes=Yes|no=No',
+		'is_required'   => true),
+
+	'pyrocms_analytics_graph' => 	array('title' => 'Analytics Graph',
+		'description'   => 'Would you like to display the graph on the dashboard?',
+		'default'       => 'yes',
+		'type'          => 'radio',
+		'options'       => 'yes=Yes|no=No',
+		'is_required'   => true),
+	);
+
 	/**
 	 * Run() is triggered when the theme is loaded for use
 	 *
@@ -76,7 +76,7 @@ class Theme_Kubocms extends Theme {
 					$this->load->library('analytics', array(
 						'username' => $this->settings->ga_email,
 						'password' => $this->settings->ga_password
-					));
+						));
 
 					// Set by GA Profile ID if provided, else try and use the current domain
 					$this->analytics->setProfileById('ga:'.$this->settings->ga_profile);

@@ -15,13 +15,13 @@
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img alt="" src="<?php echo $this->admin_theme->path; ?>/img/avatar1_small.jpg">
-                <span class="username">John Doe</span>
+                <span class="username"><?= $this->current_user->username ?></span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="edit-profile"><i class=" fa fa-suitcase"></i>Editar perfil</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+                <li><a href="admin/logout"><i class="fa fa-key"></i>Cerrar sesión</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->

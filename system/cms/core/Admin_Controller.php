@@ -114,10 +114,10 @@ class Admin_Controller extends MY_Controller {
 
 			// We always have our 
 			// edit profile links and such.
-			$menu_items['lang:global:profile'] = array(
-				'lang:cp:edit_profile_label'		=> 'edit-profile',
-				'lang:cp:logout_label'				=> 'admin/logout'
-			);
+			// $menu_items['lang:global:profile'] = array(
+			// 	'lang:cp:edit_profile_label'		=> 'edit-profile',
+			// 	'lang:cp:logout_label'				=> 'admin/logout'
+			// );
 
 			// Order the menu items. We go by our menu_order array.
 			$ordered_menu = array();
