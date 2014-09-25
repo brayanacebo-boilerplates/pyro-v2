@@ -12,7 +12,6 @@ Asset::js(array('codemirror/codemirror.js',
 	'codemirror/mode/javascript/javascript.js',
 	'codemirror/mode/markdown/markdown.js',
 	'plugins.js',
-	'ezmark/js/jquery.ezmark.js',
 	'scripts.js'
 )); ?>
 

@@ -12,8 +12,8 @@
 		{
 			if (is_array($menu_item))
 			{
-				echo '<li><a class="top-link">'.lang_label($key).'</a><ul>';
-				// echo '<li><a href="'.current_url().'#" class="top-link">'.lang_label($key).'</a><ul>';
+				echo '<li><a href="'.current_url().'#" class="top-link">'.lang_label($key).'</a><ul>';
+
 				foreach ($menu_item as $lang_key => $uri)
 				{
 					echo '<li><a href="'.site_url($uri).'" class="">'.lang_label($lang_key).'</a></li>';

@@ -13,11 +13,8 @@
 	<?php Asset::css('workless/application.css'); ?>
 	<?php Asset::css('workless/responsive.css'); ?>
 	<?php Asset::css('animate/animate.css'); ?>
-    <?php Asset::css('ezmark/css/ezmark.css'); ?>
-    <?php Asset::css('workless/webarch.css'); ?>
 
 	<?php Asset::js('jquery/jquery.js'); ?>
-    <?php Asset::js('ezmark/js/jquery.ezmark.js'); ?>
 	<?php Asset::js('admin/login.js'); ?>
 
 	<?php echo Asset::render() ?>
@@ -50,7 +47,7 @@
 					</ul>
 					<div class="animated fadeIn" id="login-action">
 						<div class="buttons padding-top" id="login-buttons">
-							<button id="login-submit" class="btn blue" ontouchstart="" type="submit" name="submit" value="<?php echo lang('login_label'); ?>">
+							<button id="login-submit" class="btn" ontouchstart="" type="submit" name="submit" value="<?php echo lang('login_label'); ?>">
 								<span><?php echo lang('login_label'); ?></span>
 							</button>
 						</div>
@@ -62,10 +59,9 @@
 	</section>
 </div>
 <footer id="login-footer">
-	<div class="wrapper animated fadeInUp" id="login-credits">
-		<!--Copyright &copy; <?php echo date('Y'); ?> FireSale 
-		<span id="version">Version <?php echo FS_VERSION; ?></span> -->
-        <div class="footer-autor"><span id="ahorranito2"></span><a href="http://www.imaginamos.com" target="_blank">Diseño Web</a><div>:</div><a href="http://www.imaginamos.com" target="_blank">imagin<span>a</span>mos.com</a></div>
+	<div class="wrapper animated fadeIn" id="login-credits">
+		Copyright &copy; 2009 - <?php echo date('Y'); ?> PyroCMS LLC 
+		<br><span id="version"><?php echo CMS_VERSION.' '.CMS_EDITION; ?></span>
 	</div>
 </footer>
 </body>
