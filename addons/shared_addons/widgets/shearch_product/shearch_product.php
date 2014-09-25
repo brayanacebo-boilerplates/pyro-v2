@@ -16,7 +16,7 @@ class Widget_Shearch_Product extends Widgets
     public $author = 'Luis Fernando Salazar Buitrago';
  
     // The authors website for the widget
-    public $website = 'www.imaginamos.com';
+    public $website = 'www.brayanacebo.com';
  
     //current version of your widget
     public $version = '1.0';

@@ -1,6 +1,6 @@
 # Boilerplate Pyro V2
 
-* [Sitio Web](http://brayanacebo.com/hidden)
+* [Sitio Web](http://brayanacebo.com)
 * [Documentación General del CMS](https://www.pyrocms.com/documentation)
 * [Documentación Tema por Defecto Front](https://www.pyrocms.com/store/details/bootstrap_3_with_bootswatch)
 * [Licencia](http://pyrocms.com/legal/license)
@@ -9,7 +9,7 @@
 
 ## Equipo
 
-* [Brayan Acebo](http://brayanacebo.com/hidden)
+* [Brayan Acebo](http://brayanacebo.com)
 
 ## Descripción
 
@@ -51,7 +51,7 @@ Antes de informar sobre errores o solicitar cualquier característica, compruebe
 
 ### Contribuidores
 
-* [Brayan Acebo](http://brayanacebo.com/hidden)
+* [Brayan Acebo](http://brayanacebo.com)
 
 ¿Crees que deberías estar en esta lista? Te añadiremos en tu próxima contribución.
 

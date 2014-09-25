@@ -1,7 +1,6 @@
 /*!
  * JavaScript Library v1.0
  * Brayan Acebo
- * Copyright 2004 Imaginamos Núcleo Tecnológico
  */
 function abrir_chat(){
   if ($('#chat').hasClass('chat_close')){
