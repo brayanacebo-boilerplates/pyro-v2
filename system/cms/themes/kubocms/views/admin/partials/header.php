@@ -19,7 +19,7 @@
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="edit-profile"><i class=" fa fa-suitcase"></i>Editar perfil</a></li>
+                <li><a href="admin/profile"><i class=" fa fa-suitcase"></i>Editar perfil</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                 <li><a href="admin/logout"><i class="fa fa-key"></i>Cerrar sesión</a></li>
             </ul>

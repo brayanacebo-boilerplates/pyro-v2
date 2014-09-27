@@ -6,12 +6,12 @@
  * @category 	Modulos
  * @license 	Apache License v2.0
  */
-class About_us extends Public_Controller {
+class About extends Public_Controller {
 
     public function __construct() {
         parent::__construct();
         $models = array(
-            'about_us_model'
+            'about_model'
             );
         $this->load->model($models);
     }
@@ -20,7 +20,7 @@ class About_us extends Public_Controller {
 
     function index()
     {
-        $data = $this->about_us_model->get_all();
+        $data = $this->about_model->get_all();
 
         $post = array();
 

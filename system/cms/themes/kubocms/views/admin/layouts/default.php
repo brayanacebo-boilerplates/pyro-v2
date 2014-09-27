@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author" content="javier varón saavedra">
+	<meta name="author" content="javier varón saavedra ft @BrayanAcebo">
 	<link rel="shortcut icon" href="img/favicon.png">
 	<title><?php echo $template['title'].' - '.lang('cp:admin_title') ?></title>
 	<base href="<?php echo base_url(); ?>" />
+
 	<!--Core CSS -->
 	<?php Asset::css('bs3/css/bootstrap.min.css'); ?>
 	<?php Asset::css('assets/jquery-ui/jquery-ui-1.10.1.custom.min.css'); ?>

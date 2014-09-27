@@ -6,11 +6,11 @@ if (!defined('BASEPATH'))
 /**
  * @author  Brayan Acebo
  */
-class About_Us_model extends MY_Model {
+class About_Model extends MY_Model {
 
     public function __construct() {
         parent::__construct();
-        $this->_table = $this->db->dbprefix . 'about_us';
+        $this->_table = $this->db->dbprefix . 'about';
     }
 
 }

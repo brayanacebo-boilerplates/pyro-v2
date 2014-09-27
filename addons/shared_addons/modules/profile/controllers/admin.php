@@ -29,4 +29,12 @@ class Admin extends Admin_Controller {
             ->build('admin/index');
     }
 
+    // ------------------------------------------------------------------------------------------
+
+    public function advanced_form()
+    {
+        $this->template
+             ->build('admin/advancedForm');
+    }
+
 }

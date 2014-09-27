@@ -2,10 +2,10 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Module_About_Us extends Module
+class Module_About extends Module
 {
 
-    public $version = '1.3';
+    public $version = '2.0';
 
     public function info() {
         return array(
@@ -14,8 +14,8 @@ class Module_About_Us extends Module
                 'en' => 'About Us',
             ),
             'description' => array(
-                'es' => 'Sobre Nosotros © Brayan Acebo',
-                'en' => 'About Us © Brayan Acebo',
+                'es' => 'Sobre Nosotros @Brayan Acebo',
+                'en' => 'About Us @Brayan Acebo',
             ),
             'frontend' => true,
             'backend' => true,
@@ -25,7 +25,7 @@ class Module_About_Us extends Module
 
     public function install() {
 
-        $this->dbforge->drop_table('about_us');
+        $this->dbforge->drop_table('about');
 
         $field = array(
             'id' => array(
@@ -56,7 +56,7 @@ class Module_About_Us extends Module
         $this->dbforge->add_field($field);
         $this->dbforge->add_key('id', true);
 
-        if (!$this->dbforge->create_table('about_us')) {
+        if (!$this->dbforge->create_table('about')) {
             return false;
         }
 
@@ -67,9 +67,9 @@ class Module_About_Us extends Module
             'text' => '',
         );
 
-        $this->db->insert('about_us', $data);
+        $this->db->insert('about', $data);
 
-        $dir = $this->upload_path . 'about_us';
+        $dir = $this->upload_path . 'about';
 
         if (!is_dir($dir)) {
             @mkdir($dir, '0777');
@@ -80,8 +80,8 @@ class Module_About_Us extends Module
     }
 
     public function uninstall() {
-        $this->dbforge->drop_table('about_us');
-        @rmdir($this->upload_path . 'about_us');
+        $this->dbforge->drop_table('about');
+        @rmdir($this->upload_path . 'about');
         return true;
     }
 
@@ -90,7 +90,7 @@ class Module_About_Us extends Module
     }
 
     public function help() {
-        return "Página de contenido, (texto e imagen) con párrafo introductorio y zona inferior delimitada para 3 campos de destacados administrables.";
+        return "Página de contenido, (texto e imagen) con párrafo introductorio.";
     }
 
 }

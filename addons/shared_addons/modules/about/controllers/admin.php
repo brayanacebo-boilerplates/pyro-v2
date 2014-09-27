@@ -13,12 +13,12 @@ class Admin extends Admin_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->lang->load('about_us');
-        $this->template
-                ->append_js('module::developer.js')
-                ->append_metadata($this->load->view('fragments/wysiwyg', null, TRUE));
+        $this->lang->load('about');
+        // $this->template
+        //         ->append_js('module::developer.js')
+        //         ->append_metadata($this->load->view('fragments/wysiwyg', null, TRUE));
         $models = array(
-            'about_us_model'
+            'about_model'
             );
         $this->load->model($models);
     }
@@ -38,10 +38,10 @@ class Admin extends Admin_Controller {
 				$this->session->set_flashdata('error', validation_errors());
 			}
 
-			$data = $this->about_us_model->limit(1)->get_all();
+			$data = $this->about_model->limit(1)->get_all();
 
         	$this->template->set('data', $data[0])
-                	->build('admin/about_us_back');
+                	->build('admin/index');
 		}
 		else // si el formulario ha sido enviado con éxito se procede
 		{
@@ -53,7 +53,7 @@ class Admin extends Admin_Controller {
                 'text' => html_entity_decode($post->text)
             );
 
-           	$config['upload_path'] = './' . UPLOAD_PATH . '/about_us';
+           	$config['upload_path'] = './' . UPLOAD_PATH . '/about';
             $config['allowed_types'] = 'gif|jpg|png|jpeg';
             $config['max_size'] = 2050;
             $config['max_width'] = 1000;
@@ -67,27 +67,27 @@ class Admin extends Admin_Controller {
             if (!empty($img)) {
                 if ($this->upload->do_upload('image')) {
                     $datos = array('upload_data' => $this->upload->data());
-                    $path = UPLOAD_PATH . 'about_us/' . $datos['upload_data']['file_name'];
+                    $path = UPLOAD_PATH . 'about/' . $datos['upload_data']['file_name'];
                     $img = array('image' => $path);
                     $data = array_merge($data, $img);
-                    $obj = $this->db->where('id', $post->id)->get('about_us')->row();
+                    $obj = $this->db->where('id', $post->id)->get('about')->row();
                     @unlink($obj->image);
                 }
                 else
                 {
                     $this->session->set_flashdata('error', $this->upload->display_errors());
-                    redirect('admin/about_us');
+                    redirect('admin/about');
                 }
             }
 
-            if ($this->about_us_model->update_all($data))
+            if ($this->about_model->update_all($data))
             {
                 // insert ok, so
-                $this->session->set_flashdata('success', lang('about_us:success_message'));
-                redirect('admin/about_us');
+                $this->session->set_flashdata('success', lang('about:success_message'));
+                redirect('admin/about');
             } else {
-                $this->session->set_flashdata('error', lang('about_us:error_message'));
-                redirect('admin/about_us');
+                $this->session->set_flashdata('error', lang('about:error_message'));
+                redirect('admin/about');
             }
 		}
     }
