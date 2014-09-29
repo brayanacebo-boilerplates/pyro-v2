@@ -14,9 +14,6 @@ class Admin extends Admin_Controller {
     public function __construct() {
         parent::__construct();
         $this->lang->load('about');
-        // $this->template
-        //         ->append_js('module::developer.js')
-        //         ->append_metadata($this->load->view('fragments/wysiwyg', null, TRUE));
         $models = array(
             'about_model'
             );

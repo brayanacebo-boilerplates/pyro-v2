@@ -30,8 +30,14 @@
 	        Asset::css('workless/rtl/rtl.css');
 	    }
 	    ?>
-	<?php echo Asset::render() ?>
 	<!-- metadata needs to load before some stuff -->
+
+
+	<!-- ADDONS -->
+	<?php Asset::css('assets/bootstrap-fileupload/bootstrap-fileupload.css'); ?>
+	<?php Asset::css('assets/gritter/css/jquery.gritter.css'); ?>
+
+	<?php echo Asset::render() ?>
 	<?php file_partial('metadata'); ?>
 </head>
 
@@ -39,47 +45,35 @@
 <section id="container">
 	<?php file_partial('header'); ?>
 </section>
+
 <section id="main-content">
 	<section class="wrapper">
-		<?php file_partial('notices'); ?>
 		<?php echo $template['body']; ?>
 	</section>
 </section>
-	<!-- <div id="container">
 
-		<section id="content">
-			
-			<header class="hide-on-ckeditor-maximize">
-			<?php //file_partial('header'); ?>
-			</header>
+<!-- PLUGINS -->
+<?= kubo_js('lib/jquery-1.8.3.min.js') ?>
+<?= kubo_js('assets/gritter/jquery.gritter.js') ?>
+<!-- ALERTAR Y NOTIFICACIONES -->
+<?php file_partial('notices'); ?>
+<?= kubo_js('assets/ckeditor/ckeditor.js') ?>
+<?= kubo_js('bs3/js/bootstrap.min.js') ?>
+<?= kubo_js('accordion-menu/jquery.dcjqaccordion.2.7.js') ?>
+<?= kubo_js('scrollTo/jquery.scrollTo.min.js') ?>
+<?= kubo_js('assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js') ?>
+<?= kubo_js('nicescroll/jquery.nicescroll.js') ?>
+<?= kubo_js('custom-select/jquery.customSelect.min.js') ?>
+<?= kubo_js('assets/easypiechart/jquery.easypiechart.js') ?>
+<?= kubo_js('assets/sparkline/jquery.sparkline.js') ?>
+<?= kubo_js('assets/flot-chart/jquery.flot.js') ?>
+<?= kubo_js('assets/flot-chart/jquery.flot.tooltip.min.js') ?>
+<?= kubo_js('assets/flot-chart/jquery.flot.resize.js') ?>
+<?= kubo_js('assets/flot-chart/jquery.flot.pie.resize.js') ?>
+<?= kubo_js('scripts.kubocms.js') ?>
+<?= kubo_js('assets/bootstrap-fileupload/bootstrap-fileupload.js') ?>
+<?= kubo_js('gritter/gritter.js') ?>
 
-			<div id="content-body">
-				<?php //file_partial('notices'); ?>
-				<?php //echo $template['body']; ?>
-			</div>
 
-		</section>
-
-	</div> -->
-<!--Core js-->
-<?php Asset::js('lib/jquery-1.8.3.min.js'); ?>
-<?php Asset::js('bs3/js/bootstrap.min.js'); ?>
-<?php Asset::js('accordion-menu/jquery.dcjqaccordion.2.7.js'); ?>
-<?php Asset::js('scrollTo/jquery.scrollTo.min.js'); ?>
-<?php Asset::js('assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js'); ?>
-<?php Asset::js('nicescroll/jquery.nicescroll.js'); ?>
-<?php Asset::js('custom-select/jquery.customSelect.min.js'); ?>
-<!--Easy Pie Chart-->
-<?php Asset::js('assets/easypiechart/jquery.easypiechart.js'); ?>
-<!--Sparkline Chart-->
-<?php Asset::js('assets/sparkline/jquery.sparkline.js'); ?>
-<!--jQuery Flot Chart-->
-<?php Asset::js('assets/flot-chart/jquery.flot.js'); ?>
-<?php Asset::js('assets/flot-chart/jquery.flot.tooltip.min.js'); ?>
-<?php Asset::js('assets/flot-chart/jquery.flot.resize.js'); ?>
-<?php Asset::js('assets/flot-chart/jquery.flot.pie.resize.js'); ?>
-<!--common script init for all pages-->
-<?php Asset::js('scripts.kubocms.js'); ?>
-<?php echo Asset::render() ?>
 </body>
 </html>

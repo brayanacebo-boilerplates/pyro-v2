@@ -5665,3 +5665,10 @@ right: -1px;
     -o-transition: none;
     transition: none;
 }
+
+/* @BrayanAcebo Style */
+.req::after {
+    content: ' *';
+    color: red;
+}
+

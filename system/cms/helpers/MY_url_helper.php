@@ -39,7 +39,7 @@ if (!function_exists('url_title'))
 			$replace.'$' => $replace,
 			'^'.$replace => $replace,
 			'\.+$' => ''
-		);
+			);
 
 		$str = convert_accented_characters($str);
 		$str = strip_tags($str);
@@ -132,11 +132,49 @@ if (!function_exists('shorten_url'))
 	 * @return url del admin
 	 */
 
-	if (!function_exists('backend_url')) {
+		if (!function_exists('backend_url')) {
 
-		function backend_url($uri = '') {
-			$CI = & get_instance();
-			return $CI->config->site_url('admin/' . $uri);
+			function backend_url($uri = '') {
+				$CI = & get_instance();
+				return $CI->config->site_url('admin/' . $uri);
+			}
+
 		}
 
+
+// ---------------------------------------------------------------------------- THEME KUBOCMS
+
+
+/**
+* Kubo Url
+*
+* Esta URL permite cargar por defecto nuestro dominio /system/cms/themes/kubocms/
+*
+* @param  Consecutivo a dominio/system/cms/themes/kubocms/...
+* @return url del tema kubocms
+*/
+
+if (!function_exists('kubo_url')) {
+	function kubo_url($uri = '') {
+		$CI = & get_instance();
+		return $CI->config->site_url('system/cms/themes/kubocms/' . $uri);
 	}
+}
+
+if (!function_exists('kubo_js')) {
+	function kubo_js($uri = '') {
+		$CI = & get_instance();
+		$src = $CI->config->site_url('system/cms/themes/kubocms/js/' . $uri);
+		$scrip = "<script src=".$src."></script>";
+		return $scrip;
+	}
+}
+
+if (!function_exists('kubo_css')) {
+	function kubo_css($uri = '') {
+		$CI = & get_instance();
+		$src = $CI->config->site_url('system/cms/themes/kubocms/css/' . $uri);
+		$scrip = "<script src=".$src."></script>";
+		return $scrip;
+	}
+}
