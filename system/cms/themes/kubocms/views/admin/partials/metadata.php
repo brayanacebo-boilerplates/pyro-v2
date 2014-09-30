@@ -1,25 +1,3 @@
-<?php
-/*Asset::js('jquery/jquery.js');
-Asset::js_inline('jQuery.noConflict();');
-Asset::js('jquery/jquery-ui.min.js', 'jquery/jquery-ui.min.js');
-Asset::js('jquery/jquery.colorbox.js');
-Asset::js('jquery/jquery.cooki.js');
-Asset::js('jquery/jquery.slugify.js');
-
-Asset::js(array('codemirror/codemirror.js',
-	'codemirror/mode/css/css.js',
-	'codemirror/mode/htmlmixed/htmlmixed.js',
-	'codemirror/mode/javascript/javascript.js',
-	'codemirror/mode/markdown/markdown.js',
-	'plugins.js',
-	'scripts.js'
-));*/ ?>
-
-<?php //if (isset($analytic_visits) OR isset($analytic_views)): ?>
-	<?php //Asset::js('jquery/jquery.excanvas.min.js'); ?>
-	<?php //Asset::js('jquery/jquery.flot.js'); ?>
-<?php //endif; ?>
-
 <script type="text/javascript">
 	pyro = { 'lang' : {} };
 	var APPPATH_URI					= "<?php echo APPPATH_URI;?>";

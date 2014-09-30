@@ -37,4 +37,12 @@ class Admin extends Admin_Controller {
              ->build('admin/advancedForm');
     }
 
+    // ------------------------------------------------------------------------------------------
+
+    public function products_list()
+    {
+        $this->template
+             ->build('admin/productsList');
+    }
+
 }
