@@ -41,3 +41,5 @@ ERROR - 2014-09-29 02:46:04 --> Page Missing: system/cms/themes/kubocms/css/ets/
 ERROR - 2014-09-29 02:46:04 --> Plugin method "img" does not exist on class "Plugin_Theme".
 ERROR - 2014-09-29 02:46:04 --> Page Missing: system/cms/themes/kubocms/css/bootstrapclndr.css
 ERROR - 2014-09-29 02:46:04 --> Plugin method "img" does not exist on class "Plugin_Theme".
+ERROR - 2014-09-29 22:47:59 --> Page Missing: img/favicon.png
+ERROR - 2014-09-29 22:47:59 --> Plugin method "img" does not exist on class "Plugin_Theme".
