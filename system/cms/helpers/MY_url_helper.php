@@ -165,7 +165,7 @@ if (!function_exists('kubo_js')) {
 	function kubo_js($uri = '') {
 		$CI = & get_instance();
 		$src = $CI->config->site_url('system/cms/themes/kubocms/js/' . $uri);
-		$scrip = "<script src=".$src."></script>";
+		$scrip = "<script src='".$src."'></script>";
 		return $scrip;
 	}
 }
@@ -174,7 +174,7 @@ if (!function_exists('kubo_css')) {
 	function kubo_css($uri = '') {
 		$CI = & get_instance();
 		$src = $CI->config->site_url('system/cms/themes/kubocms/css/' . $uri);
-		$scrip = "<script src=".$src."></script>";
+		$scrip = "<link rel='stylesheet' href='".$src."'/>";
 		return $scrip;
 	}
 }

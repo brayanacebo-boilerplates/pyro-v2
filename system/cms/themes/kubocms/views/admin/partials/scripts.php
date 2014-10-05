@@ -1,30 +1,30 @@
-			<!--Core js-->
-			<?php Asset::js('lib/jquery-1.8.3.min.js'); ?>
-			<?php Asset::js('bs3/js/bootstrap.min.js'); ?>
-			<?php Asset::js('accordion-menu/jquery.dcjqaccordion.2.7.js'); ?>
-			<?php Asset::js('scrollTo/jquery.scrollTo.min.js'); ?>
-			<?php Asset::js('assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js'); ?>
-			<?php Asset::js('nicescroll/jquery.nicescroll.js'); ?>
-			<?php Asset::js('custom-select/jquery.customSelect.min.js'); ?>
-			<!--Easy Pie Chart-->
-			<?php Asset::js('assets/easypiechart/jquery.easypiechart.js'); ?>
-			<!--Sparkline Chart-->
-			<?php Asset::js('assets/sparkline/jquery.sparkline.js'); ?>
-			<!--jQuery Flot Chart-->
-			<?php Asset::js('assets/flot-chart/jquery.flot.js'); ?>
-			<?php Asset::js('assets/flot-chart/jquery.flot.tooltip.min.js'); ?>
-			<?php Asset::js('assets/flot-chart/jquery.flot.resize.js'); ?>
-			<?php Asset::js('assets/flot-chart/jquery.flot.pie.resize.js'); ?>
-			<!--dynamic table-->
-			<?php Asset::js('assets/advanced-datatable/media/js/jquery.dataTables.js'); ?>
-			<?php Asset::js('assets/data-tables/DT_bootstrap.js'); ?>
-			
-			<?php Asset::js('assets/nestable/jquery.nestable.js'); ?>
 
-			<?php Asset::js('assets/ckeditor/ckeditor.js'); ?>
-
-			<?php Asset::js('assets/iCheck-master/jquery.icheck.js'); ?>
-
-			<!--common script init for all pages-->
-			<?php Asset::js('scripts.kubocms.js'); ?>
-			<?php echo Asset::render() ?>
+<?php 
+	//Core js
+	echo kubo_js('lib/jquery-1.8.3.min.js');
+	echo kubo_js('bs3/js/bootstrap.min.js');
+	echo kubo_js('accordion-menu/jquery.dcjqaccordion.2.7.js');
+	echo kubo_js('scrollTo/jquery.scrollTo.min.js');
+	echo kubo_js('assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js');
+	echo kubo_js('nicescroll/jquery.nicescroll.js');
+	echo kubo_js('custom-select/jquery.customSelect.min.js');
+	//Easy Pie Chart
+	echo kubo_js('assets/easypiechart/jquery.easypiechart.js');
+	//Sparkline Chart
+	echo kubo_js('assets/sparkline/jquery.sparkline.js');
+	//jQuery Flot Chart
+	echo kubo_js('assets/flot-chart/jquery.flot.js');
+	echo kubo_js('assets/flot-chart/jquery.flot.tooltip.min.js');
+	echo kubo_js('assets/flot-chart/jquery.flot.resize.js');
+	echo kubo_js('assets/flot-chart/jquery.flot.pie.resize.js');
+	//dynamic table
+	echo kubo_js('assets/advanced-datatable/media/js/jquery.dataTables.js');
+	echo kubo_js('assets/data-tables/DT_bootstrap.js');
+	echo kubo_js('assets/nestable/jquery.nestable.js');
+	echo kubo_js('assets/ckeditor/ckeditor.js');
+	echo kubo_js('assets/iCheck-master/jquery.icheck.js');
+	//common script init for all pages
+	echo kubo_js('scripts.kubocms.js');
+	//uploads
+	echo kubo_js('assets/bootstrap-fileupload/bootstrap-fileupload.js');
+?>

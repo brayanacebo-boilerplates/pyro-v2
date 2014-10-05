@@ -19,8 +19,9 @@
 	<?php file_partial('header'); ?>
 	<section id="main-content">
 		<section class="wrapper">
-			<?php file_partial('notices'); ?>
 			<?php file_partial('scripts'); ?>
+			<!-- Notificaciones y alertas -->
+			<?php file_partial('notices'); ?>
 			<?php echo $template['body']; ?>
 		</section>
 	</section>

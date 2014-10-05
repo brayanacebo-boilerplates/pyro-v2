@@ -1,14 +1,15 @@
 <?php if ($this->session->flashdata('error')): ?>
-<script>
-$(document).ready(function() {
-    console.log('slfkjgbkfdhg');
-});
-</script>
+<div class="alert error animated fadeIn">
+	<p><?php echo $this->session->flashdata('error'); ?></p>
+</div>
 <?php endif; ?>
 
 <?php if (validation_errors()): ?>
-<div class="alert error animated fadeIn">
-	<p><?php echo validation_errors(); ?></p>
+<div class="alert alert-block alert-danger fade in">
+	<button data-dismiss="alert" class="close close-sm" type="button">
+		<i class="fa fa-times"></i>
+	</button>
+	<strong>Opps!! algo salio mal</strong> <?php echo validation_errors(); ?>
 </div>
 <?php endif; ?>
 
@@ -31,15 +32,12 @@ $(document).ready(function() {
 <?php endif; ?>
 
 <?php if ($this->session->flashdata('success')): ?>
-<script>
-$(document).ready(function() {
-    $.gritter.add({
-        title: 'Notificación del sistema',
-        text: '<?php echo $this->session->flashdata('success'); ?>'
-    });
-    return false;
-});
-</script>
+<div class="alert alert-success fade in">
+	<button data-dismiss="alert" class="close close-sm" type="button">
+		<i class="fa fa-times"></i>
+	</button>
+	<strong>Genial!</strong> <?php echo $this->session->flashdata('success'); ?>
+</div>
 <?php endif; ?>
 
 <?php if ( ! empty($messages['success'])): ?>
