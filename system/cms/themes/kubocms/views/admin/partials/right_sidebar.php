@@ -90,7 +90,7 @@
             <li>
                 <div class="prog-row">
                     <div class="user-thumb">
-                        <a href="#"><img src="images/avatar1_small.jpg" alt=""></a>
+                        <!-- <a href="#"><img src="images/avatar1_small.jpg" alt=""></a> -->
                     </div>
                     <div class="user-details">
                         <h4><a href="#">Jonathan Smith</a></h4>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="prog-row">
                     <div class="user-thumb">
-                        <a href="#"><img src="images/avatar1.jpg" alt=""></a>
+                        <!-- <a href="#"><img src="images/avatar1.jpg" alt=""></a> -->
                     </div>
                     <div class="user-details">
                         <h4><a href="#">Anjelina Joe</a></h4>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="prog-row">
                     <div class="user-thumb">
-                        <a href="#"><img src="images/chat-avatar2.jpg" alt=""></a>
+                        <!-- <a href="#"><img src="images/chat-avatar2.jpg" alt=""></a> -->
                     </div>
                     <div class="user-details">
                         <h4><a href="#">John Doe</a></h4>
@@ -132,7 +132,7 @@
                 </div>
                 <div class="prog-row">
                     <div class="user-thumb">
-                        <a href="#"><img src="images/avatar1_small.jpg" alt=""></a>
+                        <!-- <a href="#"><img src="images/avatar1_small.jpg" alt=""></a> -->
                     </div>
                     <div class="user-details">
                         <h4><a href="#">Mark Henry</a></h4>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="prog-row">
                     <div class="user-thumb">
-                        <a href="#"><img src="images/avatar1.jpg" alt=""></a>
+                        <!-- <a href="#"><img src="images/avatar1.jpg" alt=""></a> -->
                     </div>
                     <div class="user-details">
                         <h4><a href="#">Shila Jones</a></h4>
@@ -248,4 +248,4 @@
     </ul>
     </div>
 </div>
-<!--right sidebar end-->
+<!--right sidebar end

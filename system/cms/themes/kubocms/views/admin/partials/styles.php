@@ -22,4 +22,6 @@
 	echo kubo_css('style-responsive.css');
 	//uploads
 	echo kubo_css('assets/bootstrap-fileupload/bootstrap-fileupload.css');
+	//datepicker
+	echo kubo_css('bootstrap-datepicker/datepicker.css');
 ?>

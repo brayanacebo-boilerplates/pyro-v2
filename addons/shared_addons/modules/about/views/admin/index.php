@@ -96,14 +96,3 @@
 </div>
 </div>
 
-<script type="text/javascript">
-
-$('#add-without-image').click(function(){
-    $.gritter.add({
-        title: 'This is a notice without an image!',
-        text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.'
-    });
-    return false;
-});
-</script>
-

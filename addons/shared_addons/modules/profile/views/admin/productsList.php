@@ -179,41 +179,10 @@
 <!-- modal -->
 <script type="text/javascript">
 $(document).ready(function() {
-    $('#dynamic-table').dataTable( {
-        //"aaSorting": [[ 4, "desc" ]]
-        "bSort": false,
-        //"bLengthChange": false,
-        //"bInfo": false,
-        "bAutoWidth": false,
-        "oLanguage": {
-          "sInfo": "Mostrando _START_ a _END_ de _TOTAL_",
-          "sInfoEmpty": "",
-          "sSearch": "Buscar:",
-          "sLoadingRecords": "Espera un poco - cargando...",
-          "oPaginate": {
-            "sNext": "Siguiente",
-            "sPrevious": "Anterior"
-          },
-          /*"sLengthMenu": '<select class="form-control">'+
-            '<option value="50" selected>50</option>'+
-            '<option value="100">100</option>'+
-            '</select> Registros por página',*/
-          "sZeroRecords": '<div class="alert alert-info fade in">'+
-            '<button data-dismiss="alert" class="close close-sm" type="button">'+
-            '<i class="fa fa-times"></i>'+
-            '</button>'+
-            '<strong>Lo sentimos!</strong> No se han encontrado registros en la busqueda. <br><br>'+
-            '</div>'
-        },
-    } );
-
     $('.flat-purple input').iCheck({
         checkboxClass: 'icheckbox_flat-purple',
         radioClass: 'iradio_flat-purple'
     });
-
-    $('#nestable_list_3').nestable();
-
     /*
      * Insert a 'details' column to the table
      */

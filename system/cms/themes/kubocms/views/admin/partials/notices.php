@@ -1,11 +1,11 @@
 <?php if ($this->session->flashdata('error')): ?>
-<div class="alert error animated fadeIn">
+<div class="alert error animated fadeIn alert-general">
 	<p><?php echo $this->session->flashdata('error'); ?></p>
 </div>
 <?php endif; ?>
 
 <?php if (validation_errors()): ?>
-<div class="alert alert-block alert-danger fade in">
+<div class="alert alert-block alert-danger fade in alert-general">
 	<button data-dismiss="alert" class="close close-sm" type="button">
 		<i class="fa fa-times"></i>
 	</button>
@@ -32,7 +32,7 @@
 <?php endif; ?>
 
 <?php if ($this->session->flashdata('success')): ?>
-<div class="alert alert-success fade in">
+<div class="alert alert-success fade in alert-general">
 	<button data-dismiss="alert" class="close close-sm" type="button">
 		<i class="fa fa-times"></i>
 	</button>
@@ -41,7 +41,7 @@
 <?php endif; ?>
 
 <?php if ( ! empty($messages['success'])): ?>
-<div class="alert success animated fadeIn">
+<div class="alert success animated fadeIn alert-general">
 	<p><?php echo $messages['success']; ?></p>
 </div>
 <?php endif; ?>

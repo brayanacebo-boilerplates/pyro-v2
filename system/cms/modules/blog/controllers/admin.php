@@ -203,7 +203,7 @@ class Admin extends Admin_Controller
 			// These are the values that we don't pass through streams processing.
 			$extra = array(
 				'title'            => $this->input->post('title'),
-				'slug'             => $this->input->post('slug'),
+				'slug'             => slug($this->input->post('title')),
 				'category_id'      => $this->input->post('category_id'),
 				'keywords'         => Keywords::process($this->input->post('keywords')),
 				'body'             => $this->input->post('body'),
@@ -251,7 +251,7 @@ class Admin extends Admin_Controller
 			$post->created_on = $created_on;
 
 			// if it's a fresh new article lets show them the advanced editor
-			$post->type or $post->type = 'wysiwyg-advanced';
+			//$post->type or $post->type = 'wysiwyg-advanced';
 		}
 
 		// Set Values
@@ -262,7 +262,7 @@ class Admin extends Admin_Controller
 
 		$this->template
 			->title($this->module_details['name'], lang('blog:create_title'))
-			->append_metadata($this->load->view('fragments/wysiwyg', array(), true))
+			//->append_metadata($this->load->view('fragments/wysiwyg', array(), true))
 			->append_js('jquery/jquery.tagsinput.js')
 			->append_js('module::blog_form.js')
 			->append_js('module::blog_category_form.js')
@@ -317,12 +317,7 @@ class Admin extends Admin_Controller
 				'field' => 'title',
 				'label' => 'lang:global:title',
 				'rules' => 'trim|htmlspecialchars|required|max_length[100]|callback__check_title['.$id.']'
-			),
-			'slug' => array(
-				'field' => 'slug',
-				'label' => 'lang:global:slug',
-				'rules' => 'trim|required|alpha_dot_dash|max_length[100]|callback__check_slug['.$id.']'
-			),
+			)
 		));
 
 		// Merge and set our validation rules
@@ -346,7 +341,7 @@ class Admin extends Admin_Controller
 
 			$extra = array(
 				'title'            => $this->input->post('title'),
-				'slug'             => $this->input->post('slug'),
+				'slug'             => slug($this->input->post('title')),
 				'category_id'      => $this->input->post('category_id'),
 				'keywords'         => Keywords::process($this->input->post('keywords'), $old_keywords_hash),
 				'body'             => $this->input->post('body'),
@@ -404,7 +399,7 @@ class Admin extends Admin_Controller
 
 		$this->template
 			->title($this->module_details['name'], sprintf(lang('blog:edit_title'), $post->title))
-			->append_metadata($this->load->view('fragments/wysiwyg', array(), true))
+			//->append_metadata($this->load->view('fragments/wysiwyg', array(), true))
 			->append_js('jquery/jquery.tagsinput.js')
 			->append_js('module::blog_form.js')
 			->set('stream_fields', $this->streams->fields->get_stream_fields($stream->stream_slug, $stream->stream_namespace, $values, $post->id))

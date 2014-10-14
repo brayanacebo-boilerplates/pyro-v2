@@ -43,5 +43,6 @@
 		</section>
 
 	</div> -->
+<?php file_partial('footer'); ?>
 </body>
 </html>

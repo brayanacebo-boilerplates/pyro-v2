@@ -5676,17 +5676,3 @@ right: -1px;
     margin-top: 35px;
 }
 
-.alert-general{
-    margin-top: -87px;
-    position: fixed;
-    z-index: 9999;
-    width: 750px;
-    left: 261px;
-    text-align: center;
-}
-
-.bottom-10{
-    bottom: 10px;
-    position: relative;
-}
-

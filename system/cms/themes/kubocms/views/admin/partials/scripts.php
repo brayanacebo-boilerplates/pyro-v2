@@ -27,4 +27,6 @@
 	echo kubo_js('scripts.kubocms.js');
 	//uploads
 	echo kubo_js('assets/bootstrap-fileupload/bootstrap-fileupload.js');
+	//Datepicker
+	echo kubo_js('bootstrap-datepicker/bootstrap-datepicker.js');
 ?>
