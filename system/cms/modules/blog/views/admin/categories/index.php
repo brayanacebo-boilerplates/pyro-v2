@@ -1,49 +1,36 @@
-<section class="title">
-	<h4><?php echo lang('cat:list_title') ?></h4>
-</section>
 
-<section class="item">
-	<div class="content">
-	
-	<?php if ($categories): ?>
-
-		<?php echo form_open('admin/blog/categories/delete') ?>
-		<div class="scroll-table">
-            <table border="0" class="table-list" cellspacing="0">
-                <thead>
-                <tr>
-                    <th width="20"><?php echo form_checkbox(array('name' => 'action_to_all', 'class' => 'check-all')) ?></th>
-                    <th><?php echo lang('cat:category_label') ?></th>
-                    <th><?php echo lang('global:slug') ?></th>
-                    <th width="120"></th>
-                </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($categories as $category): ?>
-                    <tr>
-                        <td><?php echo form_checkbox('action_to[]', $category->id) ?></td>
-                        <td><?php echo $category->title ?></td>
-                        <td><?php echo $category->slug ?></td>
-                        <td class="align-center buttons buttons-small">
-                            <?php echo anchor('admin/blog/categories/edit/'.$category->id, lang('global:edit'), 'class="btn blue small"') ?>
-                            <?php echo anchor('admin/blog/categories/delete/'.$category->id, lang('global:delete'), 'class="btn red small"') ;?>
-                        </td>
-                    </tr>
-                    <?php endforeach ?>
-                </tbody>
-            </table>
+<div class="row row-for-menu2">
+    <div class="col-sm-12">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="tab-content">
+                    <div id="home-2" class="tab-pane active">
+                        <a href="admin/blog/categories/create" type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Nuevo</a>
+                        <div class="adv-table">
+                            <table  class="display table table-bordered table-striped" id="dynamic-table">
+                                <thead>
+                                    <tr>
+                                       <th><?php echo lang('cat:category_label') ?></th>
+                                       <th><?php echo lang('global:slug') ?></th>
+                                       <th width="120">Acciones</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                <?php foreach ($categories as $category): ?>
+                                <tr>
+                                    <td><?php echo $category->title ?></td>
+                                    <td><?php echo $category->slug ?></td>
+                                    <td class="align-center buttons buttons-small">
+                                        <a href="<?php echo site_url('admin/blog/categories/edit/'.$category->id) ?>" title="<?php echo lang('global:edit')?>" class="btn btn-info btn-sm"><i class="fa fa-pencil"></i></a>
+                                        <a href="<?php echo site_url('admin/blog/categories/delete/'.$category->id) ?>" title="<?php echo lang('global:delete')?>" class="btn btn-danger btn-sm" data-toggle="modal" href="#ModalEliminar"><i class="fa fa-trash-o"></i></a>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-
-		<?php $this->load->view('admin/partials/pagination') ?>
-
-		<div class="table_action_buttons">
-		<?php $this->load->view('admin/partials/buttons', array('buttons' => array('delete') )) ?>
-		</div>
-
-		<?php echo form_close() ?>
-
-	<?php else: ?>
-		<div class="no_data"><?php echo lang('cat:no_categories') ?></div>
-	<?php endif ?>
-	</div>
-</section>
+    </section>
+</div>
+</div>
