@@ -19,11 +19,6 @@ class Admin_Categories extends Admin_Controller
 			'rules' => 'trim|required|max_length[100]|callback__check_title'
 		),
 		array(
-			'field' => 'slug',
-			'label' => 'lang:global:slug',
-			'rules' => 'trim|required|max_length[100]|callback__check_slug'
-		),
-		array(
 			'field' => 'id',
 			'rules' => 'trim|numeric'
 		),
@@ -80,15 +75,19 @@ class Admin_Categories extends Admin_Controller
 	{
 		$category = new stdClass;
 
+		$post = $this->input->post();
+		$post['slug'] = slug($post['title']);
+
 		// Validate the data
 		if ($this->form_validation->run())
 		{
-			if ($id = $this->blog_categories_m->insert($this->input->post()))
+
+			if ($id = $this->blog_categories_m->insert($post))
 			{
 				// Fire an event. A new blog category has been created.
 				Events::trigger('blog_category_created', $id);
 
-				$this->session->set_flashdata('success', sprintf(lang('cat:add_success'), $this->input->post('title')));
+				$this->session->set_flashdata('success', sprintf(lang('cat:add_success'), $post['title']));
 			}
 			else
 			{
@@ -110,7 +109,7 @@ class Admin_Categories extends Admin_Controller
 			->title($this->module_details['name'], lang('cat:create_title'))
 			->set('category', $category)
 			->set('mode', 'create')
-			->append_js('module::blog_category_form.js')
+			// ->append_js('module::blog_category_form.js')
 			->build('admin/categories/form');
 	}
 
@@ -127,13 +126,16 @@ class Admin_Categories extends Admin_Controller
 		// ID specified?
 		$category or redirect('admin/blog/categories/index');
 
+		$post = $this->input->post();
+		$post['slug'] = slug($post['title']);
+
 		$this->form_validation->set_rules('id', 'ID', 'trim|required|numeric');
 
 		// Validate the results
 		if ($this->form_validation->run())
 		{
-			$this->blog_categories_m->update($id, $this->input->post())
-				? $this->session->set_flashdata('success', sprintf(lang('cat:edit_success'), $this->input->post('title')))
+			$this->blog_categories_m->update($id, $post)
+				? $this->session->set_flashdata('success', sprintf(lang('cat:edit_success'), $post['title']))
 				: $this->session->set_flashdata('error', lang('cat:edit_error'));
 
 			// Fire an event. A blog category is being updated.
@@ -147,7 +149,7 @@ class Admin_Categories extends Admin_Controller
 		{
 			if ($this->input->post($rule['field']) !== null)
 			{
-				$category->{$rule['field']} = $this->input->post($rule['field']);
+				$category->{$rule['field']} = $post[$rule['field']];
 			}
 		}
 
@@ -155,7 +157,6 @@ class Admin_Categories extends Admin_Controller
 			->title($this->module_details['name'], sprintf(lang('cat:edit_title'), $category->title))
 			->set('category', $category)
 			->set('mode', 'edit')
-			->append_js('module::blog_category_form.js')
 			->build('admin/categories/form');
 	}
 

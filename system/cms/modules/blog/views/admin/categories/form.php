@@ -10,7 +10,8 @@
         <?php endif ?>
     </header>
     <div class="panel-body">
-        <?php echo form_open_multipart('', ' class="form-horizontal"') ?>
+        <?php echo form_open_multipart('', ' class="form-horizontal crud'.((isset($mode)) ? ' '.$mode : '').'" id="categories"') ?>
+        
         <div class="tab-content">
             <div id="create" class="tab-pane active">
                 <div class="form-group">
@@ -27,13 +28,6 @@
                     <label class="control-label col-md-2 req">Titulo</label>
                     <div class="col-md-4 col-xs-11">
                         <?php echo  form_input('title', $category->title, 'class="form-control"') ?>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label col-md-2 req">Slug</label>
-                    <div class="col-md-4 col-xs-11">
-                        <?php echo  form_input('slug', $category->slug, 'class="form-control"') ?>
                     </div>
                 </div>
 

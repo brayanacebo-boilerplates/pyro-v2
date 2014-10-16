@@ -178,3 +178,4 @@ if (!function_exists('kubo_css')) {
 		return $scrip;
 	}
 }
+

@@ -107,7 +107,7 @@
                         <div class="form-group">
                             <label class="control-label col-md-2">Palabras claves</label>
                             <div class="col-sm-9">
-                                <?php echo form_input('keywords', $post->keywords, 'id="keywords" class="form-control"') ?>
+                                <?php echo form_input('keywords', $post->keywords, 'id="keywords" class="form-control" placeholder="separadas por comas"') ?>
                             </div>
                         </div>
                     <?php endif; ?>
