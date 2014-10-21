@@ -6,7 +6,7 @@ if (!defined('BASEPATH'))
 /**
  * @author  Brayan Acebo
  */
-class album_Image_Model extends MY_Model {
+class Album_Image_Model extends MY_Model {
 
     public function __construct()
     {

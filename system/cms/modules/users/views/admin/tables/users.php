@@ -1,6 +1,6 @@
 <?php if (!empty($users)): ?>
 	<div class="scroll-table">
-        <table border="0" class="table-list" cellpadding="0" cellspacing="0">
+        <table  class="display table table-bordered table-striped" id="dynamic-table">
             <thead>
                 <tr>
                     <th with="30" class="align-center"><?php echo form_checkbox(array('name' => 'action_to_all', 'class' => 'check-all'));?></th>

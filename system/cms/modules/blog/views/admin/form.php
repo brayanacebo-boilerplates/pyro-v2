@@ -1,4 +1,3 @@
-
 <div class="row row-for-menu2">
     <div class="col-sm-12">
         <section class="panel">

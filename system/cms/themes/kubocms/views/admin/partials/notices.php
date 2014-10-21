@@ -1,6 +1,9 @@
 <?php if ($this->session->flashdata('error')): ?>
-<div class="alert error animated fadeIn alert-general">
-	<p><?php echo $this->session->flashdata('error'); ?></p>
+<div class="alert alert-danger fade in alert-general">
+	<button data-dismiss="alert" class="close close-sm" type="button">
+		<i class="fa fa-times"></i>
+	</button>
+	<strong>Opps!! algo salio mal</strong> <?php echo $this->session->flashdata('error'); ?>
 </div>
 <?php endif; ?>
 
