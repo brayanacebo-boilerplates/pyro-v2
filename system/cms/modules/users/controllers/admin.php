@@ -161,9 +161,9 @@ class Admin extends Admin_Controller
 	public function create()
 	{
 		// Extra validation for basic data
-		$this->validation_rules['email']['rules'] .= '|callback__email_check';
-		$this->validation_rules['password']['rules'] .= '|required';
-		$this->validation_rules['username']['rules'] .= '|callback__username_check';
+		$this->validation_rules['email']['rules'] .= 'callback__email_check';
+		$this->validation_rules['password']['rules'] .= 'required';
+		$this->validation_rules['username']['rules'] .= 'callback__username_check';
 
 		// Get the profile fields validation array from streams
 		$this->load->driver('Streams');

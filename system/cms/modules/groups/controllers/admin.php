@@ -30,7 +30,7 @@ class Admin extends Admin_Controller
 			array(
 				'field' => 'name',
 				'label' => lang('groups:name'),
-				'rules' => 'trim|required|max_length[100]'
+				'rules' => 'trim|max_length[100]'
 			),
 			array(
 				'field' => 'description',
@@ -60,22 +60,25 @@ class Admin extends Admin_Controller
 	{
 		$group = new stdClass();
 
+		$post = $this->input->post();
+		$post['name'] = slug($post['description']);
+
 		if ($_POST)
 		{
 			$this->form_validation->set_rules($this->validation_rules);
 
 			if ($this->form_validation->run())
 			{
-				if ($id = $this->group_m->insert($this->input->post()))
+				if ($id = $this->group_m->insert($post))
 				{
 					// Fire an event. A new group has been created.
 					Events::trigger('group_created', $id);
 
-					$this->session->set_flashdata('success', sprintf(lang('groups:add_success'), $this->input->post('name')));
+					$this->session->set_flashdata('success', sprintf(lang('groups:add_success'), $post['name']));
 				}
 				else
 				{
-					$this->session->set_flashdata('error', sprintf(lang('groups:add_error'), $this->input->post('name')));
+					$this->session->set_flashdata('error', sprintf(lang('groups:add_error'), $post['name']));
 				}
 
 				redirect('admin/groups');
@@ -109,6 +112,9 @@ class Admin extends Admin_Controller
 		// Make sure we found something
 		$group or redirect('admin/groups');
 
+		$post = $this->input->post();
+		$post['name'] = slug($post['description']);
+
 		if ($_POST)
 		{
 			// Got validation?
@@ -125,15 +131,15 @@ class Admin extends Admin_Controller
 
 			if ($this->form_validation->run())
 			{
-				if ($success = $this->group_m->update($id, $this->input->post()))
+				if ($success = $this->group_m->update($id, $post))
 				{
 					// Fire an event. A group has been updated.
 					Events::trigger('group_updated', $id);
-					$this->session->set_flashdata('success', sprintf(lang('groups:edit_success'), $this->input->post('name')));
+					$this->session->set_flashdata('success', sprintf(lang('groups:edit_success'), $post['name']));
 				}
 				else
 				{
-					$this->session->set_flashdata('error', sprintf(lang('groups:edit_error'), $this->input->post('name')));
+					$this->session->set_flashdata('error', sprintf(lang('groups:edit_error'), $post['name']));
 				}
 
 				redirect('admin/groups');
